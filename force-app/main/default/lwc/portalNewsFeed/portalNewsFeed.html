@@ -1,0 +1,58 @@
+<template>
+    <!-- Header section containing the logo and header text -->
+    <div class="news-header-container">
+        <img src={portalNewsLogo} alt="Portal News Logo" class="header-logo"/>
+        <div class="header-text">
+            <h1 class="news-header">PORTAL NEWS</h1>
+            <p class="news-description">Stay informed about the most recent legal cases and updates.</p>
+            <p class="news-date">{currentDate}</p>
+        </div>
+    </div>
+
+    <!-- Display error message if there is an error fetching news -->
+    <template if:true={error}>
+        <div class="error-message">
+            <p>Sorry, we couldn't fetch the latest news. Please try again later.</p>
+        </div>
+    </template>
+
+    <!-- Display message if there are no news items -->
+    <template if:true={noNewsItems}>
+        <div class="no-news-message">
+            <p>We don't have any portal news.</p>
+        </div>
+    </template>
+
+    <!-- Display the list of news items if available -->
+    <template if:true={newsItems}>
+        <div class="news-container">
+            <template for:each={newsItems} for:item="item">
+                <div key={item.Id} class="news-item">
+                    <!-- News item header containing the icon, title, date, and category -->
+                    <div class="news-header">
+                        <img src={legalNewsIcon} alt="Legal News Icon" class="news-icon"/>
+                        <div class="news-title-container">
+                            <h3 class="news-title">{item.Title__c}</h3>
+                            <div class="news-meta">
+                                <span class="news-time-ago">{item.timeAgo}</span>
+                                <span class="news-separator">|</span>
+                                <span class="news-category">{item.Category__c}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News content and the action buttons -->
+                    <div class="news-content">
+                        <div class="rich-text-content" data-id={item.Id}></div>
+                        <div class="news-actions">
+                            <a href={item.PortalNewsUrl__c} target="_blank" class="action-button read-more-button">Read More</a>
+                            <template if:true={item.Related_Case__c}>
+                                <a href="javascript:void(0);" data-case-id={item.Related_Case__c} onclick={handleGoToCase} class="action-button see-case-button">View Case Details</a>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </template>
+</template>

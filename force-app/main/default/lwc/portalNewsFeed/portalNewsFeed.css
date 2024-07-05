@@ -1,0 +1,184 @@
+/* portalNewsFeed.css */
+
+/* Header section styling */
+.news-header-container {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #003366;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Styling for the logo in the header */
+.header-logo {
+    width: 150px; /* Adjust this size as needed */
+    height: auto;
+    margin-right: 1rem;
+}
+
+/* Styling for the text in the header */
+.header-text {
+    color: #ffffff;
+    text-align: left;
+    flex-grow: 1;
+}
+
+/* Styling for the header title */
+.news-header {
+    font-size: 2.5rem; /* Increased size */
+    font-weight: bold;
+    font-family: 'Georgia', serif; /* New York Times style font */
+    margin: 0;
+}
+
+/* Styling for the header description */
+.news-description {
+    font-size: 1rem; /* Increased size to match date */
+    margin: 0.25rem 0;
+}
+
+/* Styling for the date in the header */
+.news-date {
+    font-size: 1rem; /* Matching description size */
+    color: #ffffff;
+    margin: 0.25rem 0; /* Adjusted margin */
+}
+
+/* News items section styling */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #f4f6f9;
+}
+
+/* Styling for each news item */
+.news-item {
+    border: 1px solid #d8dde6;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative; /* To ensure the buttons are positioned correctly */
+}
+
+/* Styling for the news item header */
+.news-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Styling for the news icon in the header */
+.news-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 1rem;
+}
+
+/* Styling for the container holding the title and meta information */
+.news-title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the news title */
+.news-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Styling for the meta information (time ago and category) */
+.news-meta {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #999999;
+    margin-top: 0.25rem;
+}
+
+/* Styling for the separator between time ago and category */
+.news-separator {
+    margin: 0 0.5rem;
+}
+
+/* Styling for the time ago */
+.news-time-ago {
+    margin-right: 0.5rem;
+}
+
+/* Styling for the category */
+.news-category {
+    color: #999999;
+}
+
+/* Styling for the news content */
+.news-content {
+    font-size: 1.1rem;
+    color: #333;
+    position: relative; /* To position the buttons inside this container */
+}
+
+/* Styling for the news actions container */
+.news-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Styling for the action buttons */
+.action-button {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Styling for the action buttons on hover */
+.action-button:hover {
+    background-color: #f0f0f0; /* Background color for button hover */
+}
+
+/* Styling for images within the rich text content */
+.rich-text-content img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+/* Styling for the error message */
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #ffe5e5;
+    border-radius: 0.25rem;
+    border: 1px solid #ffcccc;
+}
+
+/* Styling for no news message */
+.no-news-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 2rem;
+    border: 1px solid #d8dde6;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    margin: 2rem 0;
+}
