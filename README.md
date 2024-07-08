@@ -22,3 +22,4 @@ The `sfdx-project.json` file contains useful configuration information for your 
 # Portal-News-Feed
 # Portal-News-Feed
 # PortalNews
+# PortalNews
