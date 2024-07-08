@@ -16,7 +16,7 @@ export default class PortalNewsFeed extends LightningElement {
         this.currentDate = this.formatDate(new Date());
     }
 
-    // Wire method to fetch the latest news items from the Apex controller
+    //  Wire method to fetch the latest news items from the Apex controller
     @wire(getLatestNews)
     wiredNews({ error, data }) {
         if (data) {
