@@ -12,7 +12,7 @@
 
 /* Styling for the logo in the header  */
 .header-logo {
-    width: 150px; /* Adjust this size as needed */
+    width: 150px; 
     height: auto;
     margin-right: 1rem;
 }
@@ -26,23 +26,23 @@
 
 /* Styling for the header title */
 .news-header {
-    font-size: 2.5rem; /* Increased size */
+    font-size: 2.5rem; 
     font-weight: bold;
-    font-family: 'Georgia', serif; /* New York Times style font */
+    font-family: 'Georgia', serif; 
     margin: 0;
 }
 
 /* Styling for the header description */
 .news-description {
-    font-size: 1rem; /* Increased size to match date */
+    font-size: 1rem; 
     margin: 0.25rem 0;
 }
 
 /* Styling for the date in the header */
 .news-date {
-    font-size: 1rem; /* Matching description size */
+    font-size: 1rem; 
     color: #ffffff;
-    margin: 0.25rem 0; /* Adjusted margin */
+    margin: 0.25rem 0; 
 }
 
 /* News items section styling */
